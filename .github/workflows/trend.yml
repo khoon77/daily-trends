@@ -29,4 +29,3 @@ jobs:
         git add trends/
         git commit -m "🔥 자동 생성: 트렌드 글" || echo "No changes"
         git push
-
