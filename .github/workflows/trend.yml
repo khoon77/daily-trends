@@ -27,5 +27,7 @@ jobs:
         git config user.name "github-actions"
         git config user.email "actions@github.com"
         git add trends/
-        git commit -m "🔥 자동 생성: 트렌드 글" || echo "No changes"
+        git commit -m "🔥 자동 생성: 트렌드 글" || echo "nothing to commit"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
