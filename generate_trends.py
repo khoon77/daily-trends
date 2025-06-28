@@ -6,7 +6,7 @@ today = datetime.now().strftime('%Y-%m-%d')
 filename = f"trends/{today}.html"
 
 pytrends = TrendReq(hl='ko', tz=540)
-trending = pytrends.trending_searches(pn='south_korea')
+trending = pytrends.trending_searches(pn='united_states')
 popular = trending[0].tolist()
 
 html = f"<html><head><meta charset='utf-8'><title>{today} 트렌드</title></head><body>"
